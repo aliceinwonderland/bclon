@@ -12,11 +12,8 @@ PS = dvips
 RM = rm -f
 WC = wc -w
 
-ifeq ($(HASBIB), no)
+
 all: makedvi $(TRG).pdf wc
-else
-all: makedvi $(TRG).pdf wc
-endif
 
 print: all
 	$(PS) $(TRG).dvi
@@ -24,13 +21,14 @@ print: all
 wc:
 	$(WC) $(TRG).tex
 
-%.bbl: %.tex %.bib
-	$(TEX) $(TRG)
-	$(BIB) $(TRG)
 
 makedvi: $(TRG).tex
 	$(TEX) $(TRG)
 	$(TEX) $(TRG) 
+	$(BIB) $(TRG).aux
+	$(TEX) $(TRG) 
+	$(TEX) $(TRG) 
+	
 
 %.pdf: %.dvi
 	$(PDF) $(TRG).dvi
@@ -40,6 +38,7 @@ clean:
 	$(RM) $(TRG).dvi
 	$(RM) $(TRG).log
 	$(RM) $(TRG).pdf
+
 ifeq ($(HASBIB), yes)
 	$(RM) $(TRG).bbl
 	$(RM) $(TRG).blg
