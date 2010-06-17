@@ -11,15 +11,99 @@
 
 \title{La otra clonaci'on}
 \author{Jamie Drake}
-%\renewcommand{\today}{November 2, 1994}
+
 \maketitle
-Este es el texto de un artículo de divulgaci'on sobre clonaci'on. Esto significa que hay que explicar f'acil lo dif'icil.
+Cuando escuchamos o leemos la palabra clonaci'on, generalmente lo asociamos al hecho de obtener una copia gen'etica de una entidad biol'ogica. Existe otra clonaci'on, una t'ecnica que surge en el 'area de inteligencia artificial y cuyo fin es poder copiar las habilidades, a esa t'ecnica se le conoce como clonaci'on de comportamiento. En este art'iculo se describir'a de qu'e se trata, origen, aplicaciones y perspectivas.
 
-Este es un outline inicial, sujeto a cambios inminentes.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{\textquestiondown Qu'e es una habilidad?} 
 
-\section{Motivaci'on} 
+Cuando una persona es buena para hacer algo decimos que la persona tiene habilidad, capacidad, destreza. Sin embargo, la palabra habilidad es tambi'en, de acuerdo a RAE cada una de las cosas que la persona ejecuta. Por lo tanto, es correcto decir:
+
+\begin{itemize}
+\item Ella tiene habilidad para la m'usica. 
+\item Me pregunto si podr'e adquirir esa habilidad.
+\end{itemize}
+Proceso cognitivo es el proceso de obtener conocimiento por el pensamiento, experiencia y los sentidos. Usamos las habilidades cognitivas siempre que tratamos de entender algo. Funciona as'i:
+
+\begin{itemize}
+\item Se te ense~na algo nuevo.
+\item Piensas en ello.
+\item Lo expresas en tus propias palabras.
+\item Observas c'omo la nueva informaci'on se ajusta a otras cosas que ya sabes.
+\end{itemize}
+
+Las habilidades cognitivas separan a los buenos estudiantes de los mas-o-menos. Aqu'i el porqu'e:
+\begin{itemize}
+\item Sin habilidades cognitivas desarrolladas, los ni~nos no son capaces de integrar nueva informaci'on.
+\item Tristemente, la mayor'ia de los estudiantes contin'ua al siguiente nivel antes de ser experto en las habilidades acad'emicas b'asicas como leer, escribir y matem'aticas pues no han desarrollado habilidades cognitivas.
+\end{itemize}
+
+
+Las habilidades dos tienen aspectos: el cognitivo y la subcognitivo. La parte cognitiva es el c'omo hacerlo. La persona puede ejecutar voluntariamente acciones sucesivas para lograr un resultado. Ejemplos: la persona sabe como leer y lee un libro completo en un d'ia, la persona sabe bailar, nadar, etc. La parte subcognitiva es el cambio en cualquier habilidad que se origina con la pr'actica. Esto es m'as gradual y autom'atico. Esto es aprendizaje. A veces es dif'icil distinguir entre ambas partes, se nota m'as cuando el saber-c'omo se hace mal.  Por ejemplo, si la maestra cree que la manera de remediar deficiencias en aritm'etica es encargar m'as ejercicios. Lo que hace falta es conocimiento de c'omo, no pr'actica.
+
+Las partes cognitivas y subcognitivas del aprendizaje de habilidades pueden cooperar en el aprendizaje. La cooperaci'on se da cuando la automaticidad ganada por la pr'actica libera recursos mentales que permite pensar en lo que est'as haciendo y asi tal vez mejorar la forma de hacerlo. Sin embargo, la automaticidad hace que las acciones sean m'as dif'iciles de examinar y modificar. Un mal swing de golf bien practicado es m'as dif'icil de corregir pues literalmente no sabes qu'e est'as haciendo. Es lo mismo para tu acento en un lenguaje distinto. Las acciones de articulaci'on que son responsables de ello se controlan en niveles de la neuromusculatura m'as all'a de la accesibilidad cognitiva.
+
+En la clonaci'on de comportamiento, el aprendizaje autom'atico se usa para crear una descripci'on simb'olica donde la introspecci'on por el humano falla porque la tarea de realiza de forma subconsciente. Las actividades subcognitivas requeridas para realizar una habilidad de alto nivel puede modelarse de tal forma que la habilidad sea explicable y que el modelo sea operacional. Ser explicable significa que la salida del programa de aprendizaje debe poder ser le'ida y entendida por un humano.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section {\textquestiondown Cu'ales es su origen?}
-\section{Diferencia entre clonaci'on y programaci'on por demostraci'on}
+\subsection{Clonaci'on de comportamiento}
+
+Esta t'ecnica se origin'o a principios de los noventa a ra'iz de cr'iticas a la Inteligencia Artificial en el sentido de que no se daba importancia a las habilidades de bajo nivel y s'olo se enfocaba a los procesos cognitivos de alto nivel~\cite{michiesammut:cloning}. El t'ermino \textsf{clonaci'on de comportamiento}, que a lo largo de la tesis referiremos como \textsf{clonaci'on}, fu'e acu~nado por Donald Michie en 1992 y tiene por objetivo extraer conocimiento expl'icito de habilidades de bajo nivel. \textsf{Clonaci'on} busca hacer expl'icita una habilidad y que ese conocimiento sirva para construir controladores que reproduzcan esa habilidad. Al ser dif'icil programar manualmente ese tipo de habilidades, el aprendizaje computacional es de gran ayuda para construir estos sistemas de control.
+
+La t'ecnica b'asica consiste en obtener ejemplos o trazas de las variables involucradas en el proceso cuando un operador o sistema ejecuta la tarea. Estos ejemplos se dan como entrada a algoritmos de aprendizaje computacional que pueden construir modelos, por ejemplo reglas o 'arboles, que al ejecutarse producir'an comportamientos similares a quien gener'o los ejemplos. Los modelos resultantes pueden ser incorporados como programas controladores. A estos programas se les llama ``clones'' porque reproducen la habilidad de una persona o sistema.
+
+Una de las ventajas de esta t'ecnica es que no requiere un modelo matem'atico de control tradicional pues no siempre se cuenta con la informaci'on suficiente o el modelo exacto del proceso. La persona que entrena, 'unicamente necesita ejecutar la habilidad m'as no comprender sus fundamentos te'oricos. En este contexto, los ``clones'' son representaciones simb'olicas de comportamientos de bajo nivel. 
+
+Los principales objetivos de esta t'ecnica son: (i) producir ``clones'' que puedan realizar la tarea de control y (ii) producir ``clones'' que hagan expl'icita la habilidad, que describan lo que el operador hace~\cite{modellingskills}. El primer objetivo es importante porque producir un clon que sirva como controlador facilita la programaci'on al no tenerse que codificar expl'icitamente la tarea. El segundo objetivo permite tener informaci'on expl'icita sobre la estrategia de control llevada a cabo por el operador. En esta tesis nos interesa cubrir los dos objetivos puesto que buscamos aprender ``clones'' que sean confiables para el control de un robot m'ovil y tambi'en queremos que los modelos que se obtengan sean f'aciles de interpretar y que puedan utilizarse en otras tareas.  
+
+La formulaci'on original de la \textsf{clonaci'on} es la recuperaci'on de la estrategia de control a partir de trazas y es un mapeo directo de estados a acciones. Una traza est'a formada generalmente por pares (Estado, Clase) donde Estado es un vector de atributos $(x_1,x_2,...)$ y Clase es la acci'on efectuada por el operador en ese estado. Una de las principales limitantes de esta representaci'on es que carece de estructura y es dif'icil mostrar la estrategia del operador de forma descriptiva. En el aspecto de control, los ``clones'' obtenidos no son muy robustos con respecto a cambios en la tarea de control.
+
+Las t'ecnicas de aprendizaje que se han usado m'as frecuentemente en \textsf{clonaci'on} son los \textsf{'arboles de decisi'on}~\cite{quinlan1986}, aunque otras t'ecnicas que reconstruyan funciones a partir de ejemplos pueden ser usadas, como las redes neuronales.
+ 
+
+\subsection{Aprendizaje por imitaci'on}
+ El \textsf{aprendizaje por imitaci'on}, tambi'en conocido como \textsf{programaci'on por demostraci'on}~\cite{aude:pbd} surgi'o a principios de los ochentas como camino para automatizar la programaci'on manual de robots industriales. Las demostraciones se hac'ian por tele-operaci'on, es decir, gu'iando al robot a distancia y las secuencias estado-acci'on se registraban. La informaci'on de los sensores era segmentada en sub-metas discretas que correspond'ian a puntos a lo largo de la trayectoria. Las acciones b'asicas o primitivas eran generalmente movimientos punto-punto para alcanzar las submetas. As'i, la tarea demostrada era segmentada en una secuencia de transiciones estado-acci'on-estado. Esta secuencia era convertida en reglas \textit{if-then} que describ'ian los estados y las acciones de acuerdo a relaciones simb'olicas, tales como ``cerca-de'', ``mover-hacia'', ``mover-sobre''. A estos s'imbolos se le asociaban rangos num'ericos que se daban como conocimiento \textit{a priori} al sistema.  Una demostraci'on completa se representaba en un grafo donde cada nodo representaba un estado y los arcos representaban las acciones. 
+
+Posteriormente se sugiri'o el uso de t'ecnicas de aprendizaje computacional y surgieron as'i preguntas como: ?`c'omo generalizar una tarea?, ?`c'omo reproducir una habilidad en situaciones desconocidas?, ?`c'omo evaluar un intento?, y ?`c'omo definir el papel del usuario durante el aprendizaje?
+
+En los trabajos iniciales se hizo notar la importancia de proporcionar un conjunto de ejemplos numeroso y diverso. Se incorpor'o al usuario como parte activa del aprendizaje al proporcionarle ejemplos que no hubieran sido cubiertos. Actualmente el trabajo que se realiza es muy similar a los iniciales. Se ha avanzado en la forma de guiar al robot, la forma de interacci'on y el tipo de sensores. Se incorporaron t'ecnicas para abordar aspectos como la generalizaci'on entre demostraciones y la generalizaci'on del movimiento en distintas situaciones. Ejemplos de las t'ecnicas son: redes neuronales, l'ogica difusa y modelos ocultos de Markov. La tendencia en el \textsf{aprendizaje por imitaci'on} es basarse en el comportamiento animal y de infantes. La ``bio-inspiraci'on'', como se le llama en el 'area tiene como uno de sus principales componentes la representaci'on sensorimotora. Actualmente la tendencia es que los robots presenten gran flexibilidad tanto en aprendizaje como en interacci'on con humanos. 
+
+%\medskip
+Uno de los problemas que caracteriza al \textsf{aprendizaje por imitaci'on} es el problema de correspondencia, que consiste en el mapeo entre el demostrador y el imitador. Si ambos tienen cuerpos similares, entonces una obvia correspondencia es mapear las correspondientes partes del cuerpo: brazo izquierdo del demostrador con brazo izquierdo del imitador, ojo derecho del demostrador con ojo derecho del imitador. En el caso anterior hay una clara correspondencia para la ejecuci'on de las acciones. Una correspondencia no tiene que ser una relaci'on uno-a-uno, puede ser uno-muchos, muchos-uno o muchos-muchos. Aunque el n'umero de grados de libertad (o por sus siglas DOFs del ingl'es \textit{Degrees of Freedom}) en las articulaciones de los brazos de un robot sean distintas puede haber correspondencia. Un robot puede imitar a un humano a saludar sin que el n'umero de sus articulaciones sea la misma. El problema de correspondencia trata de encontrar la secuencia de acciones realizadas por el imitador que correspondan a las del demostrador de acuerdo a su propio cuerpo.
+
+En trabajos recientes~\cite{saunders:self} una propuesta de soluci'on al problema de correspondencia consiste en generar los ejemplos con el mismo robot. A esta t'ecnica le llaman ``auto-imitaci'on''. Sin embargo, esta t'ecnica tiene las mismas caracter'isticas de ``clonaci'on de comportamiento'' que es la que utilizamos en esta tesis y que a continuaci'on se describe.
+
+\textsf{Aprendizaje por imitaci'on} y \textsf{clonaci'on} son t'ecnicas que tienen objetivos y aplicaciones diferentes. Imitaci'on surgi'o con el fin de automatizar la programaci'on de robots industriales. La idea principal es que exista un demostrador que realice la tarea que el imitador va a aprender. El demostrador puede ser diferente al imitador. \textsf{Clonaci'on} busca extraer conocimiento expl'icito de una habilidad para construir controladores que la puedan reproducir. No se origin'o espec'ificamente para rob'otica sino que ha sido aplicada en diversos dominios como por ejemplo, aprendizaje de vuelo, control de gr'uas. La Tabla~\ref{tab:imiclon} resume las diferencias entre ambas t'ecnicas.
+
+\begin{table}[h]
+\begin{center}
+\begin{small}
+\begin{tabular}{|l|l|l|} 
+
+\hline
+%\noalign{\smallskip}
+& \textsf{Imitaci'on}  & \textsf{Clonaci'on}\\
+%\noalign{\smallskip} 
+\hline
+Inicios & Principios de los 80s.  &    Principios de los 90s.\\ \hline
+Objetivo& Automatizar la programaci'on  & (1) Extraer conocimiento expl'icito de habilidades.\\ 
+				& manual de robots industriales. & (2) Construir controladores que reproduzcan\\ 
+				& 															 & \hspace{0.5cm} la habilidad.\\ \hline
+Obtenci'on 		& 	El demostrador puede ser 		 	&  El usuario gu'ia al aprendiz (imitador).\\ 
+de ejemplos		& 	diferente al imitador.		 		&  \\ \hline
+Aplicaci'on 		& 	Rob'otica. 		 	&  Aprendizaje de vuelo, control de gr'uas,\\ 
+											 		& 								 	&  control de bicicleta, veh'iculos, robots, etc. \\ 
+\hline
+
+\end{tabular}
+\end{small}
+\end{center}
+\caption[Diferencias entre \textsf{imitaci'on} y \textsf{clonaci'on}]{Diferencias entre \textsf{aprendizaje por imitaci'on} y \textsf{clonaci'on}}
+\label{tab:imiclon}
+\end{table} 
+
 \section{Cronolog'ia y trabajos principales}
 \section{Aplicaciones diversas}
 \section{Beneficios y desventajas}
@@ -27,4 +111,6 @@ Con respecto a si mismo y a otras t'ecnicas. Beneficio social?
 \section{En rob'otica: el paso a paso}
 \section{Perspectivas futuras}
 
+\bibliographystyle{plain}
+\bibliography{refs}
 \end{document} 
