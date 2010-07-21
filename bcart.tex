@@ -96,16 +96,27 @@ Aplicaci'on 		& 	Rob'otica. 		 	&  Aprendizaje de vuelo, control de gr'uas,\\
 \end{table} 
 
 \section{Aplicaciones de la clonaci'on}
-La clonaci'on se ha aplicado principalmente para desarrollar controladores usando las trazas de control de operadores expertos. La idea es reconstruir la estrategia de control que el operador ejecuta subconscientemente.
+Las principales aplicaciones de la clonaci'on son en sistemas din'amicos para los que resulta dif'icil programar de forma manual las habilidades para controlarlos. Lo que se busca es reconstruir la estrategia de control que el operador ejecuta subconscientemente para generar controladores autom'aticos y que sean expl'icitos para que se pueda ver c'omo le hacen.
+
+
 \begin{itemize}
-\item Simuladores de vuelo. La idea es que al obtener trazas de pilotos expertos, el simulador pueda realizar un vuelo de forma autom'atica de forma parecida a como lo hace el piloto. Tambi'en se buscaba obtener el modelo de forma expl'icita para poder entender esa estrategia. Lo que se hizo fu'e tomar trazas de pilotos expertos, procesarlas con algoritmos de inducci'on de 'arboles. Se obtuvieron modelos que se pod'ian ejecutar en el simulador. Una de los usos que se le di'o fue para entrenar a pilotos.
-\item El p'endulo invertido. El objetivo es extraer un modelo que al ejecutarlo permita mantener el p'endulo en equilibrio. Extraer un modelo entendible es tambi'en importante.
+\item \textbf{Aprendiendo a volar.} Tener un piloto autom'atico entrenado con las estrategias de vuelo de pilotos experimentados es una de las principales motivaciones de esta aplicaci'on.\\
+\textbf{Objetivo:} La idea es que al obtener trazas de pilotos expertos, el simulador pueda realizar un vuelo de forma autom'atica de forma parecida a como lo hace el piloto. Tambi'en se buscaba obtener el modelo de forma expl'icita para poder entender esa estrategia. Ense~nar al piloto autom'atico c'omo despegar, volar a una distancia y altitud determinada, regresar y aterrizar. Usaron C4.5~\cite{Sammut92learningto}\\
+Realizar maniobras en turbulencia~\cite{Isaac03goal-directedlearning} usando una descomposici'on jer'arquica\\
+Uso de aprendizaje por refuerzo y representaci'on relacional, incorporando conocimiento del dominio~\cite{Morales04learningto}.
+
+
+\textbf{C'omo se hizo:} Lo que se hizo fu'e tomar trazas de pilotos expertos, procesarlas con algoritmos de inducci'on de 'arboles. Se obtuvieron modelos que se pod'ian ejecutar en el simulador. \\
+\textbf{Resultados:} Una de los usos que se le di'o fue para entrenar a pilotos. Se observ'o que los mejores pilotos no generan buenas trazas de aprendizaje puesto que cometen pocos errores, siendo asi, el algoritmo de aprendizaje no puede inducir cosas como 'qu'e hacer en caso de'. Se generaron mejores controladores cuando los pilotos tuvieron que corregir sus acciones.\\
+\textbf{Qui'enes:} Claude Sammut~\cite{Sammut92learningto},Andrew Isaac~\cite{Isaac03goal-directedlearning}, Eduardo F. Morales~\cite{Morales04learningto}.
+\item El p'endulo invertido. Es uno de los ejemplos cl'asicos de control. Se tiene un p'endulo eEl objetivo es extraer un modelo que al ejecutarlo permita mantener el p'endulo en equilibrio. Extraer un modelo entendible es tambi'en importante.~\cite{Suc99skillmodelling}~\cite{And99modellingof}
 \item Gr'uas. Mediante trazas de operadores de gr'ua se aprende un conjunto de ecuaciones usando un sistema llamado Goldhorn
 \item Bicicletas. La idea era aprenderse a equilibrar en una bicicleta y conducir a un punto. Se hizo usando aprendizaje por refuerzo y algo llamado shaping.
 \item Soccer. Aprendieron estrategias de juego en un simulador usando WEKA y se las pon'ian a agentes.
 \item Dolly el helic'optero. Aprendi'o estrategias de control de vuelo mediante aprendizaje por refuerzo.
 \item Rob'otica. Ejemplo de Claire deste.
 \end{itemize}
+
 
 \section{M'as all'a de la clonaci'on b'asica}
 El enfoque b'asico de clonaci'on es obtener trazas, aplicar un algoritmo y obtener el modelo. Sin embargo, esto se puede asi de simple solo cuando se tiene por ejemplo, un conjunto de acciones como clases y as'i. 
@@ -122,6 +133,8 @@ Ventajas:
 \item Funci'on doble: control y descripci'on expl'icita.
 \item No es necesario ser experto. No es necesario saber control por ejemplo, para poder inducir un controlador. El usuario se enfoca en obtener trazas.
 \item Utilizando representaciones relacionales es posible agregar conocimiento del dominio.
+\item El aprendizaje autom'atico de sistemas de control puede ayudar a entender mejor las habilidades subcognitivas que son inaccesiblea para introspecci'on.
+\item Puede servir para instrucci'on ya que se muestra expl'icitamente lo que se est'a haciendo.
 \end{itemize}
 
 Un aspecto que para algunos es ventaja y para otros desventaja es el hecho de que los ejemplos o trazas deben ser buenos para que el controlador funcione bien. Para m'i punto de vista, es una ventaja que dando ejemplos esto pueda hacerse. Cuando se le ense~na algo ya sea a una mascota o a una persona se le trata de dar los mejores ejemplos posibles, no se le va a ense~ñar mal y luego esperar que lo hagan bien. 
