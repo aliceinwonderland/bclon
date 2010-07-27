@@ -1,6 +1,9 @@
 % LaTeX document
 \documentclass[11pt]{article}
 \usepackage[spanish,activeacute]{babel}
+\usepackage{graphicx}
+\usepackage{epsfig}
+\usepackage{subfigure}
 
 \setlength{\topmargin}{-.5in}
 \setlength{\textheight}{9in}
@@ -14,6 +17,103 @@
 
 \maketitle
 Cuando escuchamos o leemos la palabra clonaci'on, generalmente lo asociamos al hecho de obtener una copia gen'etica de una entidad biol'ogica. Existe otra clonaci'on, una t'ecnica que surge en el 'area de inteligencia artificial y cuyo fin es poder copiar las habilidades, a esa t'ecnica se le conoce como clonaci'on de comportamiento. En este art'iculo se describir'a de qu'e se trata, origen, aplicaciones y perspectivas.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Hab'ia una vez ...}
+El t'ermino clonaci'on de comportamiento fue acu~nado en 1993 por el profesor Donald Michie (1923 - 2007), nos remontaremos a la d'ecada de los sesenta para conocer el origen.
+
+Las ciencias de la computaci'on empez'o a ser una disciplina acad'emica entre 1950 y principios de los 1960s. El primer programa acad'emico en los Estados Unidos se origin'o en la Universidad de Purdue en 1962.
+
+La formaci'on de DM aparentemente no ten'ia relaci'on con las ciencias computacionales, sin embargo, cuando en 1943 'el buscaba actividades para contribuir en la guerra (Segunda guerra mundial) 'el intent'o inscribirse en un curso de japon'es para oficiales de inteligencia en Bedford, al este de Inglaterra. Sin embargo, el curso ya estaba lleno, por lo que en vez de eso, fue entrenado en criptograf'ia. Seis semanas despu'es, fue reclutado para Bletchley Park, donde Las claves y c'odigos de diversos pa'ises del Eje eran descifradas y la historia empez'o. Qu'e habr'ia pasado si el curso de japon'es no se llena?
+
+En Marzo de 1938, Hitler orden'o la ocupaci'on de Austria y anunci'o su uni'on y en Mayo del mismo a~no orden'o la ocupaci'on de Checoslovaquia. La amenaza de guerra avanzaba sobre Europa por lo que la escuela de cifrado y codificaci'on del gobierno con sede en Londres necesitaba un sitio seguro. El gobierno Brit'anico inici'o la b'usqueda y por las condiciones que Bletchley Park ten'ia: teletipo y v'ias de comunicaci'on, era el lugar adecuado. 
+
+En Agosto de 1939 los descifradores de c'odigo llegaron
+
+Y fue durante 1939 a 1945 cuando Alan Turing se encontraba en Bletchley Park. Bletchley Park era la sede de las comunicaciones del gobierno brit'anico durante la guerra. 
+
+\begin{figure}[h]
+
+\centering
+\includegraphics[keepaspectratio,width=7cm]{theimg/bp}
+
+\caption[Bletchley Park]{Bletchley Park} 
+\label{fig:bp}
+
+\end{figure}
+
+Durante 1920s los alemanes construyeron la m'aquina Enigma code, ellos cre'ian que los mensajes codificados (militares y operaciones secretas) no podr'ian decodificarse. La m'aquina parec'ia una m'aquina de escribir y era capaz de realizar millones de c'alculos en milisegundos. Los c'odigos secretos que los controlaban se cambiaban diario.
+
+Extender Enigma...
+
+En 1943 Turing encabez'o un grupo de cient'ificos cuyo objetivo era romper el c'odigo de Enigma. Para lograrlo, el equipo desarroll'o una computadora que se componc'ia de 1,500 tubos de vac'io.
+
+Y ahi lleg'o DM, quien hizo una significativa contribuci'on al trabajo para romper el c'odigo, y donde sus mejoras a la computadora Colossus redujo significativamente el tiempo necesario para interceptar y ... los mensajes. assigned to the "Testery," a section which tackled a German teleprinter cipher. During his time at Bletchley Park he worked with Alan Turing and Jack Good.
+
+Extender Colossus...
+
+\begin{figure}[h]
+\begin{center}
+\fbox{
+\subfigure[Enigma]{\includegraphics[width=5.5cm,keepaspectratio]{theimg/enigma}}  
+\hspace{1cm}
+\subfigure[Colossus]{\includegraphics[keepaspectratio,height=5.9cm]{theimg/colossus}} 
+}
+
+\caption{Enigma y Colossus}
+  \label{fig:enigmacolossus}
+\end{center}
+\end{figure} 
+
+Michie y Turing se hicieron amigos y durante los juegos de ajedrez que compartieron hablaban sobre las posibilidade de construir una computadora que jugara ajedrez, como parte de un un proyecto mayor sobre la creaci'on de una inteligencia artificial.
+
+Como vemos, las cosas valiosas surgen jugando, durante el ocio.
+
+
+En 1946 Michie dej'o Bletchley, las computadoras Colossus fueron destruidas y el trabajo se mantuvo en secreto hasta 1989.
+
+En 1942 recibi'o una beca (Open Classical Scholarship) para Balliol College, Oxford. Entre 1942 y 1945 realiz'o servicio de guerra en Bletchley Park. En 1946 asisti'o a la escuela de medicina de Oxford y luego hizo una maestr'ia en Anatom'ia Humana y Fisiolog'ia (1949) y luego un doctorado en Oxon en Mammalian Genetics (1953).
+
+El inter'es de DM por el aprendizaje autom'atico era creciente y estuvo siempre al tanto del trabajo que se hac'iaen el National Physical Laboratory en donde exploraban sobre juegos automatizados dimilares a las m'aquinas para jugar sobre las que Turing y 'el platicaban en Bletchley. Sin embargo, DM no ten'ia acceso a computadoras y desarrollaba sus sistemas en papel. Uno de esos sistemas fue MENACE (Matchbox Educable Noughts and Crosses Engine), dise~nado en 1960 usando cajas de cerillos y cuentas de cristal de distintos colores (o semillas). MENACE era capaz de aprender por la experiencia, fu'e uno de los primeros experimentos en aprendizaje por refuerzo y aprendi'o a jugar un juego perfecto de gato (tic-tac-toe). Actualmente 
+
+In 1960 he built Menace, the Matchbox Educable Noughts and Crosses Engine, a game-playing machine consisting of 300 matchboxes and a collection of glass beads of different colours. Each box had a noughts-and-crosses game position drawn on it, and beads inside to represent possible moves that could be made from that position. Inside each box was a wedge that could trap one bead, and a move was chosen by shaking the matchbox and opening it to show which colour bead had been trapped. Menace was able to learn from experience, as each time a game was played beads were added to the box to reinforce successful moves. 
+
+\begin{figure}[h]
+
+\centering
+\fbox{
+\includegraphics[keepaspectratio,width=7cm]{theimg/menace}
+}
+\caption[MENACE]{MENACE} 
+\label{fig:menace}
+
+\end{figure}
+
+%Verificar 'esto, 
+%The system so impressed the US Office of Naval Research that Michie was invited to Stanford to implement Menace on an IBM computer. On his return to England he persuaded the new Science Research Council to fund research into machine intelligence.
+
+Michie fue invitado a Stanford a implementar MENACE en una computadora IBM y a su regreso a Inglaterra, persuadi'o al Consejo de Investigaci'on y Ciencia fundar la investigaci'on en aprendizaje autom'atico. El programa se estableci'on en 1965 en la Universida de Edinburgo, Michie fue su primer director. Michie fue designado Profesor de aprendizaje autom'atico en 1967 y la unidad cambi'o su nombre a Departamento de Aprendizaje Autom'atico y Percepci'on.
+
+%Artificial intelligence and machine learning were popular research topics in the 1960s and 1970s, with most researchers confident that the main goals of building intelligent computers that could perceive the outside world and respond appropriately would soon be achieved. As it became clear that they had significantly underestimated the complexity of the problem, attention shifted to specific areas, such as computer vision, robotics, machine translation and expert systems that could deal with limited domains of knowledge.
+
+%Michie’s primary research involved finding ways for machines to extract rules and behaviours from example data, so that they could learn from experience, and he developed the technique of “standard induction”. This was effectively applied in industrial plants, for example at a uranium reprocessing plant in Pennsylvania.
+
+%Aware of the broader applications of his research, Michie developed a commercial version, ExpertEase, to make the process of extracting general rules from human experts more efficient.
+
+%Ver esto de ExpertEase...
+
+Y aqu'i llega el aprendizaje por ejemplos:
+In the early 1970s Michie and his team built Freddy, the first robot that was able to learn by being shown how to assemble an object from its parts, using computer vision to recognise components. However, cuts in research funding for AI led to the closure of the robot project.
+
+Michie retired from Edinburgh in 1984, retaining an emeritus chair. A revival of interest in robotics and expert systems meant that funding was once more available for research, and in 1986 he established the Turing Institute at Strathclyde University, becoming its first director of research.
+
+He was also involved in the commercial exploitation of breakthroughs in machine learning as a director of Intelligent Terminals Ltd, producing the SuperExpert expert system development tool. 
+
+
+
+Lo que se hizo para ML, sistemas basados en reglas y razonamiento por computadora sentaron las bases de lo que actualmente usamos.
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{\textquestiondown Qu'e es una habilidad?} 
@@ -99,8 +199,8 @@ Aplicaci'on 		& 	Rob'otica. 		 	&  Aprendizaje de vuelo, control de gr'uas,\\
 Las principales aplicaciones de la clonaci'on son en sistemas din'amicos para los que resulta dif'icil programar de forma manual las habilidades para controlarlos. Lo que se busca es reconstruir la estrategia de control que el operador ejecuta subconscientemente para generar controladores autom'aticos y que sean expl'icitos para que se pueda ver c'omo le hacen.
 
 
-\begin{itemize}
-\item \textbf{Aprendiendo a volar.} Tener un piloto autom'atico entrenado con las estrategias de vuelo de pilotos experimentados es una de las principales motivaciones de esta aplicaci'on.\\
+
+\textbf{Aprendiendo a volar.} Tener un piloto autom'atico entrenado con las estrategias de vuelo de pilotos experimentados es una de las principales motivaciones de esta aplicaci'on.\\
 \textbf{Objetivo:} La idea es que al obtener trazas de pilotos expertos, el simulador pueda realizar un vuelo de forma autom'atica de forma parecida a como lo hace el piloto. Tambi'en se buscaba obtener el modelo de forma expl'icita para poder entender esa estrategia. Ense~nar al piloto autom'atico c'omo despegar, volar a una distancia y altitud determinada, regresar y aterrizar. Usaron C4.5~\cite{Sammut92learningto}\\
 Realizar maniobras en turbulencia~\cite{Isaac03goal-directedlearning} usando una descomposici'on jer'arquica\\
 Uso de aprendizaje por refuerzo y representaci'on relacional, incorporando conocimiento del dominio~\cite{Morales04learningto}.
@@ -109,13 +209,108 @@ Uso de aprendizaje por refuerzo y representaci'on relacional, incorporando conoc
 \textbf{C'omo se hizo:} Lo que se hizo fu'e tomar trazas de pilotos expertos, procesarlas con algoritmos de inducci'on de 'arboles. Se obtuvieron modelos que se pod'ian ejecutar en el simulador. \\
 \textbf{Resultados:} Una de los usos que se le di'o fue para entrenar a pilotos. Se observ'o que los mejores pilotos no generan buenas trazas de aprendizaje puesto que cometen pocos errores, siendo asi, el algoritmo de aprendizaje no puede inducir cosas como 'qu'e hacer en caso de'. Se generaron mejores controladores cuando los pilotos tuvieron que corregir sus acciones.\\
 \textbf{Qui'enes:} Claude Sammut~\cite{Sammut92learningto},Andrew Isaac~\cite{Isaac03goal-directedlearning}, Eduardo F. Morales~\cite{Morales04learningto}.
-\item El p'endulo invertido. Es uno de los ejemplos cl'asicos de control. Se tiene un p'endulo eEl objetivo es extraer un modelo que al ejecutarlo permita mantener el p'endulo en equilibrio. Extraer un modelo entendible es tambi'en importante.~\cite{Suc99skillmodelling}~\cite{And99modellingof}
-\item Gr'uas. Mediante trazas de operadores de gr'ua se aprende un conjunto de ecuaciones usando un sistema llamado Goldhorn
-\item Bicicletas. La idea era aprenderse a equilibrar en una bicicleta y conducir a un punto. Se hizo usando aprendizaje por refuerzo y algo llamado shaping.
-\item Soccer. Aprendieron estrategias de juego en un simulador usando WEKA y se las pon'ian a agentes.
-\item Dolly el helic'optero. Aprendi'o estrategias de control de vuelo mediante aprendizaje por refuerzo.
-\item Rob'otica. Ejemplo de Claire deste.
-\end{itemize}
+
+\begin{figure}[h]
+\begin{center}
+\fbox{
+\subfigure[Pilotos]{\includegraphics[width=6cm,keepaspectratio]{theimg/pilotos}}  
+\hspace{1cm}
+\subfigure[Avi'on]{\includegraphics[width=6cm,keepaspectratio]{theimg/avion}} 
+}
+
+\caption{Avion y Pilotos}
+  \label{fig:volar}
+\end{center}
+\end{figure} 
+
+
+\medskip
+\noindent
+
+\textbf{El p'endulo invertido}. Es uno de los ejemplos cl'asicos de control. Se tiene un p'endulo eEl objetivo es extraer un modelo que al ejecutarlo permita mantener el p'endulo en equilibrio. Extraer un modelo entendible es tambi'en importante.~\cite{Suc99skillmodelling}~\cite{And99modellingof}
+
+\paragraph{}
+\noindent
+\textbf{Gr'uas}. Mediante trazas de operadores de gr'ua se aprende un conjunto de ecuaciones usando un sistema llamado Goldhorn
+
+\begin{figure}[h]
+
+\centering
+\fbox{
+\includegraphics[keepaspectratio,width=3.5cm]{theimg/crane}
+}
+\caption[Gr'ua]{Gr'ua} 
+\label{fig:grua}
+
+\end{figure}
+
+\paragraph{}
+\noindent
+\textbf{Bicicletas}. La idea era aprenderse a equilibrar en una bicicleta y conducir a un punto. Se hizo usando aprendizaje por refuerzo y algo llamado shaping.
+
+\begin{figure}[h]
+
+\centering
+\fbox{
+\includegraphics[keepaspectratio,width=5cm]{theimg/bici}
+}
+\caption[Bicicleta]{Bicicleta} 
+\label{fig:bici}
+
+\end{figure}
+
+\paragraph{}
+\noindent
+\textbf{Dolly el helic'optero}. Aprendi'o estrategias de control de vuelo mediante aprendizaje por refuerzo.
+
+\begin{figure}[h]
+
+\centering
+\fbox{
+\includegraphics[keepaspectratio,width=5cm]{theimg/helicopteroAm}
+}
+\caption[Helic'optero]{Helic'optero} 
+\label{fig:helicoptero}
+
+\end{figure}
+
+
+\paragraph{}
+\noindent
+\textbf{Soccer}. Aprendieron estrategias de juego en un simulador usando WEKA y se las pon'ian a agentes.
+
+\begin{figure}[h]
+
+\centering
+\fbox{
+\includegraphics[keepaspectratio,width=3cm]{theimg/robosoccer}
+}
+\caption[Robosoccer]{Robosoccer} 
+\label{fig:robosoc}
+
+\end{figure}
+
+
+\paragraph{}
+\noindent
+\textbf{Rob'otica}. Ejemplo de Claire deste.
+
+\begin{figure}[h]
+\begin{center}
+\fbox{
+\subfigure[Maid]{\includegraphics[width=4cm,keepaspectratio]{theimg/robobed}}  
+\hspace{1cm}
+\subfigure[bed]{\includegraphics[width=3cm,keepaspectratio]{theimg/robomaid}} 
+\hspace{1cm}
+\subfigure[dishes]{\includegraphics[width=4cm,keepaspectratio]{theimg/robodishes}}
+}
+
+\caption{Robot de servicio}
+  \label{fig:robotservicio}
+\end{center}
+\end{figure} 
+
+
 
 
 \section{M'as all'a de la clonaci'on b'asica}
