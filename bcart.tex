@@ -67,18 +67,20 @@ En 1943 Turing encabez'o un grupo de cient'ificos cuyo objetivo era descifrar lo
 \end{center}
 \end{figure} 
 
-Donald Michie quien hizo una significativa contribuci'on al trabajo para descifrar el c'odigo, y sus mejoras a la computadora Colossus redujo significativamente el tiempo necesario para interceptar y decodificar los mensajes. 
+Donald Michie quien hizo una significativa contribuci'on al trabajo para descifrar el c'odigo, y sus mejoras a la computadora Colossus redujo significativamente el tiempo necesario para interceptar y decodificar los mensajes, pasando de semanas a unas cuantas horas, un logro m'as all'a de lo que se esperaba lograr.
 
 Michie y Turing se hicieron amigos y durante los juegos de ajedrez que compartieron hablaban sobre las posibilidade de construir una computadora que jugara ajedrez, como parte de un un proyecto mayor sobre la creaci'on de una inteligencia artificial.
 
 En 1946 Michie dej'o Bletchley, las computadoras Colossus fueron destruidas y el trabajo se mantuvo en secreto hasta 1989.
 
 \medskip
-\textbf{Despu'es de la guerra}. Donald Michie acept'o la beca en Estudios Cl'asicos pero pronto encontr'o los estudios aburridos as'i que los dej'o y se cambi'o a estudiar anatom'ia humana y fisiolog'ia, haciendo importantes trabajos en gen'etica de mam'iferos. A principios de lo sesentas, volvi'o a cambiar ahora a ciencias de la computaci'on y se convirti'o en investigador en inteligencia artificial~\cite{colossusJack}. \textquestiondown Qu'e habr'ia pasado si el curso de japon'es no se llena?
+\textbf{Despu'es de la guerra}. Donald Michie acept'o la beca en Estudios Cl'asicos pero pronto encontr'o los estudios aburridos as'i que los dej'o y se cambi'o a estudiar anatom'ia humana y fisiolog'ia (1949) y un doctorado en Oxford en gen'etica de mam'iferos (1953), haciendo importantes trabajos en gen'etica de mam'iferos. Hizo aportaciones tambi'en en biolog'ia molecular. A principios de lo sesentas, volvi'o a cambiar ahora a ciencias de la computaci'on y se convirti'o en investigador en inteligencia artificial~\cite{colossusJack}. \textquestiondown Qu'e habr'ia pasado si el curso de japon'es no se llena?
 
 En 1946 Donald Michie asisti'o a la escuela de medicina de Oxford y luego hizo una maestr'ia en Anatom'ia Humana y Fisiolog'ia (1949) y luego un doctorado en Oxon en Mammalian Genetics (1953).
 
-Sin embargo, el inter'es de Michie por el aprendizaje autom'atico segu'ia latente y estuvo siempre al tanto del trabajo que se hac'iaen el National Physical Laboratory en donde exploraban sobre juegos automatizados similares a las m'aquinas para jugar sobre las que Turing y 'el platicaban en Bletchley. Su inter'es particulas era sobre hacer que las computadoras aprendieran de la experiencia. Sin embargo, DM no ten'ia acceso a computadoras y desarrollaba sus sistemas en papel. Uno de esos sistemas fue MENACE (Matchbox Educable Noughts and Crosses Engine), dise~nado en 1960 usando cajas de cerillos y cuentas de cristal de distintos colores (o semillas). MENACE era capaz de aprender por la experiencia, fu'e uno de los primeros experimentos en aprendizaje por refuerzo y aprendi'o a jugar un juego perfecto de gato (tic-tac-toe). 
+Sin embargo, su atenci'on regres'o a sus discusiones con Turing, en particular el asunto sobre si las computadoras pod'ian ser programadas para aprender de la experiencia.
+
+Sin embargo, el inter'es de Michie por el aprendizaje autom'atico segu'ia latente y estuvo siempre al tanto del trabajo que se hac'iaen el National Physical Laboratory en donde exploraban sobre juegos automatizados similares a las m'aquinas para jugar sobre las que Turing y 'el platicaban en Bletchley. Su inter'es particulas era sobre hacer que las computadoras aprendieran de la experiencia. Sin embargo, DM no ten'ia acceso a computadoras y desarrollaba sus sistemas en papel. Como prueba de concepto, uno de esos sistemas fue MENACE (Matchbox Educable Noughts and Crosses Engine), dise~nado en 1960 usando cajas de cerillos y cuentas de cristal de distintos colores (o semillas). MENACE era capaz de aprender por la experiencia, fu'e uno de los primeros experimentos en aprendizaje por refuerzo y aprendi'o a jugar un juego perfecto de gato (tic-tac-toe). MENACE utilizaba el conceptualmente simple algoritmo de prop'osito general BOXES el cual pod'ia descubrir tambi'en estrategias de control para el problema del p'endulo y el carro.
 %In 1960 he built Menace, the Matchbox Educable Noughts and Crosses Engine, a game-playing machine consisting of 300 matchboxes and a collection of glass beads of different colours. Each box had a noughts-and-crosses game position drawn on it, and beads inside to represent possible moves that could be made from that position. Inside each box was a wedge that could trap one bead, and a move was chosen by shaking the matchbox and opening it to show which colour bead had been trapped. Menace was able to learn from experience, as each time a game was played beads were added to the box to reinforce successful moves. 
 
 \begin{figure}[h]
@@ -105,18 +107,17 @@ Michie fue invitado a Stanford a implementar MENACE en una computadora IBM y a s
 
 %Ver esto de ExpertEase...
 
-Y aqu'i llega el aprendizaje por ejemplos:
-In the early 1970s Michie and his team built Freddy, the first robot that was able to learn by being shown how to assemble an object from its parts, using computer vision to recognise components. However, cuts in research funding for AI led to the closure of the robot project.
+El siguiente inter'es fue desarrollar t'ecnicas para extracci'on inductiva de conceptos a partir de ejemplos. 
+
+En 1973 su equipo construy'o a Freddy (FREDERICK), el primer robot que era capaz de aprender al mostrarsele c'omo ensamblar un objeto, usaba visi'on para reconocer componentes.
+
+En 1983 revel'o Expert-Ease, un programa que razonaba y pod'ia generar explicaciones. Extra'ia reglas de humanos expertos. 
 
 Lo que se hizo para ML, sistemas basados en reglas y razonamiento por computadora sentaron las bases de lo que actualmente usamos.
 
-
+Una de las ideas fundamentales para que una computadora presente un comportamiento inteligente es la capacidad de aprender habilidades ... pero, 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{\textquestiondown Qu'e es una habilidad?} 
-
-Cuando estudiaba la preparatoria me di cuenta de que carezco de habilidad para el dibujo. Una de las materias que llev'e fue dibujo t'ecnico. Cuando la vi en mi lista de materias imagin'e que ser'ia divertido; no sab'ia lo que me esperaba. El profesor hizo 'enfasis en el dibujo de proyecciones isom'etricas. Nuestro trabajo era dibujar el objeto a partir de las vistas que el profesor dibujaba. Algunos de mis compa~neros ten'ian la habilidad de reconstruir el objeto en la mente al instante y lo plasmaban en el papel de forma veloz y precisa. Yo tardaba horas para tener una aproximaci'on de dudosa exactitud. As'i supe que nunca ser'ia arquitecta, ni dise~nadora gr'afica, ni algo parecido. Estaba en un problema, necesitaba salir bien en la materia. Lo que ten'ia que hacer era saber c'omo hacerlo y practicar. \textquestiondown Lograr'ia aprender a hacer los dibujos? \textquestiondown C'omo se adquiere una habilidad?
-
-\medskip
 
 Cuando queremos aprender algo, primero aprendemos lo b'asico, practicamos, adquirimos nuevo conocimiento y a medida que el conocimiento y la pr'actica aumenta, nuestra habilidad crece y nos hacemos expertos. La adquisici'on de una habilidad consta de dos componentes: el cognitivo y el subcognitivo. La parte cognitiva es el c'omo-hacerlo, es adquirir el conocimiento sobre lo que se quiere aprender. Por ejemplo, si est'as aprendiendo un nuevo idioma, primero aprendes la gram'atica, pronunciaci'on b'asica y expresiones simples. Conforme avanzas, vas adquiriendo nuevo conocimiento y practicando, incrementando tu dominio del lenguaje. En el componente cognitivo se te ense~na algo nuevo, piensas en ello, lo expresas en tus propias palabras, observas c'omo la nueva informaci'on se ajusta a otras cosas que ya sabes; est'as consciente de lo que aprendes.
 
@@ -124,13 +125,9 @@ Cuando queremos aprender algo, primero aprendemos lo b'asico, practicamos, adqui
 Por otro lado, el componente subcognitivo es la modificaci'on de la habilidad que ocurre con la pr'actica y se da de manera autom'atica. La pr'actica lleva al perfeccionamiento de la habilidad, a dominarla, a ser un experto. Sin embargo, si el conocimiento recibido fue equivocado, la habilidad se perfeccionar'a pero siempre con un resultado defectuoso. Por ejemplo, si en el aprendizaje de un nuevo idioma se ense~n'o mal la pronunciaci'on, la pr'actica se hace de acuerdo a esa mala pronunciaci'on. S'olo adquiriendo conocimiento nuevo que sustituya al equivocado y practicando puede corregir el error. En este caso, 'organos que intervienen en la pronunciaci'on tienen que ajustarse gradualmente al nuevo conocimiento adquirido lo que va m'as all'a del alcance de quien pronuncia. No se le puede ordenar expl'icitamente a los m'usculos c'omo moverse. Esta es la parte subcognitiva, lo que conscientemente no puede modificarse ni explicarse.
 
 \medskip
-En ese momento yo no estaba pensando en el proceso de adquirir la habilidad. Trat'e de entender las clases, cosa que no me di'o mucho resultado. Consult'e material adicional y resolv'i ejercicios por mi cuenta hasta que logr'e hacer los trabajos en tiempo razonable. Vaya, al principio la regla T se me mov'ia, me sal'ian l'ineas dobles y ten'ia que repetir el trabajo. Poco a poco, el uso de la regla T era autom'atico y no ten'ia que hacer el dibujo primero a l'apiz y luego con el estil'ografo. A falta de una habilidad natural para el dibujo, tuve que dedicarle mucho tiempo a aprender y a practicar. No logr'e ser una experta, pero pude aprobar decorosamente la materia. 
-
-\medskip
-Si eso pasa con un humano, imag'inate c'omo es hacer un programa que adquiera habilidades.
-
-\medskip
 En la clonaci'on de comportamiento, el aprendizaje autom'atico se usa para crear una descripci'on simb'olica donde la introspecci'on por el humano falla porque la tarea de realiza de forma subconsciente. Las actividades subcognitivas requeridas para realizar una habilidad de alto nivel pueden modelarse de tal forma que la habilidad sea explicable y que el modelo sea operacional. Ser explicable significa que la salida del programa de aprendizaje debe poder ser le'ida y entendida por un humano.
+
+Si para un humano el adquirir una habilidad no siempre es sencillo \textquestiondown c'omo ser'a para una computadora?
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section {Clonaci'on de comportamiento}
@@ -141,70 +138,33 @@ La t'ecnica b'asica consiste en obtener ejemplos o trazas de las variables invol
 
 Una de las ventajas de esta t'ecnica es que no requiere un modelo matem'atico de control tradicional pues no siempre se cuenta con la informaci'on suficiente o el modelo exacto del proceso. La persona que entrena, 'unicamente necesita ejecutar la habilidad m'as no comprender sus fundamentos te'oricos. En este contexto, los ``clones'' son representaciones simb'olicas de comportamientos de bajo nivel. 
 
-Los principales objetivos de esta t'ecnica son: (i) producir ``clones'' que puedan realizar la tarea de control y (ii) producir ``clones'' que hagan expl'icita la habilidad, que describan lo que el operador hace~\cite{modellingskills}. El primer objetivo es importante porque producir un clon que sirva como controlador facilita la programaci'on al no tenerse que codificar expl'icitamente la tarea. El segundo objetivo permite tener informaci'on expl'icita sobre la estrategia de control llevada a cabo por el operador. En esta tesis nos interesa cubrir los dos objetivos puesto que buscamos aprender ``clones'' que sean confiables para el control de un robot m'ovil y tambi'en queremos que los modelos que se obtengan sean f'aciles de interpretar y que puedan utilizarse en otras tareas.  
+Los principales objetivos de esta t'ecnica son: (i) producir ``clones'' que puedan realizar la tarea de control y (ii) producir ``clones'' que hagan expl'icita la habilidad, que describan lo que el operador hace~\cite{modellingskills}. El primer objetivo es importante porque producir un clon que sirva como controlador facilita la programaci'on al no tenerse que codificar expl'icitamente la tarea. El segundo objetivo permite tener informaci'on expl'icita sobre la estrategia de control llevada a cabo por el operador. 
 
 La formulaci'on original de la \textsf{clonaci'on} es la recuperaci'on de la estrategia de control a partir de trazas y es un mapeo directo de estados a acciones. Una traza est'a formada generalmente por pares (Estado, Clase) donde Estado es un vector de atributos $(x_1,x_2,...)$ y Clase es la acci'on efectuada por el operador en ese estado. Una de las principales limitantes de esta representaci'on es que carece de estructura y es dif'icil mostrar la estrategia del operador de forma descriptiva. En el aspecto de control, los ``clones'' obtenidos no son muy robustos con respecto a cambios en la tarea de control.
 
 Las t'ecnicas de aprendizaje que se han usado m'as frecuentemente en \textsf{clonaci'on} son los \textsf{'arboles de decisi'on}~\cite{quinlan1986}, aunque otras t'ecnicas que reconstruyan funciones a partir de ejemplos pueden ser usadas, como las redes neuronales.
  
-\paragraph{}
-\noindent
-
-\textbf{Aprendizaje por imitaci'on}
- El \textsf{aprendizaje por imitaci'on}, tambi'en conocido como \textsf{programaci'on por demostraci'on}~\cite{aude:pbd} surgi'o a principios de los ochentas como camino para automatizar la programaci'on manual de robots industriales. Las demostraciones se hac'ian por tele-operaci'on, es decir, gu'iando al robot a distancia y las secuencias estado-acci'on se registraban. La informaci'on de los sensores era segmentada en sub-metas discretas que correspond'ian a puntos a lo largo de la trayectoria. Las acciones b'asicas o primitivas eran generalmente movimientos punto-punto para alcanzar las submetas. As'i, la tarea demostrada era segmentada en una secuencia de transiciones estado-acci'on-estado. Esta secuencia era convertida en reglas \textit{if-then} que describ'ian los estados y las acciones de acuerdo a relaciones simb'olicas, tales como ``cerca-de'', ``mover-hacia'', ``mover-sobre''. A estos s'imbolos se le asociaban rangos num'ericos que se daban como conocimiento \textit{a priori} al sistema.  Una demostraci'on completa se representaba en un grafo donde cada nodo representaba un estado y los arcos representaban las acciones. 
-
-Posteriormente se sugiri'o el uso de t'ecnicas de aprendizaje computacional y surgieron as'i preguntas como: ?`c'omo generalizar una tarea?, ?`c'omo reproducir una habilidad en situaciones desconocidas?, ?`c'omo evaluar un intento?, y ?`c'omo definir el papel del usuario durante el aprendizaje?
-
-En los trabajos iniciales se hizo notar la importancia de proporcionar un conjunto de ejemplos numeroso y diverso. Se incorpor'o al usuario como parte activa del aprendizaje al proporcionarle ejemplos que no hubieran sido cubiertos. Actualmente el trabajo que se realiza es muy similar a los iniciales. Se ha avanzado en la forma de guiar al robot, la forma de interacci'on y el tipo de sensores. Se incorporaron t'ecnicas para abordar aspectos como la generalizaci'on entre demostraciones y la generalizaci'on del movimiento en distintas situaciones. Ejemplos de las t'ecnicas son: redes neuronales, l'ogica difusa y modelos ocultos de Markov. La tendencia en el \textsf{aprendizaje por imitaci'on} es basarse en el comportamiento animal y de infantes. La ``bio-inspiraci'on'', como se le llama en el 'area tiene como uno de sus principales componentes la representaci'on sensorimotora. Actualmente la tendencia es que los robots presenten gran flexibilidad tanto en aprendizaje como en interacci'on con humanos. 
-
-%\medskip
-Uno de los problemas que caracteriza al \textsf{aprendizaje por imitaci'on} es el problema de correspondencia, que consiste en el mapeo entre el demostrador y el imitador. Si ambos tienen cuerpos similares, entonces una obvia correspondencia es mapear las correspondientes partes del cuerpo: brazo izquierdo del demostrador con brazo izquierdo del imitador, ojo derecho del demostrador con ojo derecho del imitador. En el caso anterior hay una clara correspondencia para la ejecuci'on de las acciones. Una correspondencia no tiene que ser una relaci'on uno-a-uno, puede ser uno-muchos, muchos-uno o muchos-muchos. Aunque el n'umero de grados de libertad (o por sus siglas DOFs del ingl'es \textit{Degrees of Freedom}) en las articulaciones de los brazos de un robot sean distintas puede haber correspondencia. Un robot puede imitar a un humano a saludar sin que el n'umero de sus articulaciones sea la misma. El problema de correspondencia trata de encontrar la secuencia de acciones realizadas por el imitador que correspondan a las del demostrador de acuerdo a su propio cuerpo.
-
-En trabajos recientes~\cite{saunders:self} una propuesta de soluci'on al problema de correspondencia consiste en generar los ejemplos con el mismo robot. A esta t'ecnica le llaman ``auto-imitaci'on''. Sin embargo, esta t'ecnica tiene las mismas caracter'isticas de ``clonaci'on de comportamiento'' que es la que utilizamos en esta tesis y que a continuaci'on se describe.
-
-\textsf{Aprendizaje por imitaci'on} y \textsf{clonaci'on} son t'ecnicas que tienen objetivos y aplicaciones diferentes. Imitaci'on surgi'o con el fin de automatizar la programaci'on de robots industriales. La idea principal es que exista un demostrador que realice la tarea que el imitador va a aprender. El demostrador puede ser diferente al imitador. \textsf{Clonaci'on} busca extraer conocimiento expl'icito de una habilidad para construir controladores que la puedan reproducir. No se origin'o espec'ificamente para rob'otica sino que ha sido aplicada en diversos dominios como por ejemplo, aprendizaje de vuelo, control de gr'uas. La Tabla~\ref{tab:imiclon} resume las diferencias entre ambas t'ecnicas.
-
-\begin{table}[h]
-\begin{center}
-\begin{small}
-\begin{tabular}{|l|l|l|} 
-
-\hline
-%\noalign{\smallskip}
-& \textsf{Imitaci'on}  & \textsf{Clonaci'on}\\
-%\noalign{\smallskip} 
-\hline
-Inicios & Principios de los 80s.  &    Principios de los 90s.\\ \hline
-Objetivo& Automatizar la programaci'on  & (1) Extraer conocimiento expl'icito de habilidades.\\ 
-				& manual de robots industriales. & (2) Construir controladores que reproduzcan\\ 
-				& 															 & \hspace{0.5cm} la habilidad.\\ \hline
-Obtenci'on 		& 	El demostrador puede ser 		 	&  El usuario gu'ia al aprendiz (imitador).\\ 
-de ejemplos		& 	diferente al imitador.		 		&  \\ \hline
-Aplicaci'on 		& 	Rob'otica. 		 	&  Aprendizaje de vuelo, control de gr'uas,\\ 
-											 		& 								 	&  control de bicicleta, veh'iculos, robots, etc. \\ 
-\hline
-
-\end{tabular}
-\end{small}
-\end{center}
-\caption[Diferencias entre \textsf{imitaci'on} y \textsf{clonaci'on}]{Diferencias entre \textsf{aprendizaje por imitaci'on} y \textsf{clonaci'on}}
-\label{tab:imiclon}
-\end{table} 
-
 \section{Aplicaciones de la clonaci'on}
 Las principales aplicaciones de la clonaci'on son en sistemas din'amicos para los que resulta dif'icil programar de forma manual las habilidades para controlarlos. Lo que se busca es reconstruir la estrategia de control que el operador ejecuta subconscientemente para generar controladores autom'aticos y que sean expl'icitos para que se pueda ver c'omo le hacen.
 
+\medskip
+\noindent
 
+\textbf{El p'endulo invertido}. Es uno de los ejemplos cl'asicos de control. Consiste en un carro que se desliza sobre un riel de longitud fija. Un poste est'a aseguradol carro de modo que s'olo puede balancearse en una dimensi'on. Solo una fuerza de magnitud fija puede aplicrse hacia la izquierda o derecha. La tarea del aprendizaje es construir una estrategia de control que mantenga el poste en equilibrio y al carro sin golpear los extremos del riel. El problema se trata de evitar la falla m'as que de alcanzar un valor espec'ifico. Consiste en mantener balanceado Se tiene un p'endulo eEl objetivo es extraer un modelo que al ejecutarlo permita mantener el p'endulo en equilibrio. Extraer un modelo entendible es tambi'en importante.~\cite{Suc99skillmodelling}~\cite{And99modellingof}~\cite{freyre}
 
-\textbf{Aprendiendo a volar.} Tener un piloto autom'atico entrenado con las estrategias de vuelo de pilotos experimentados es una de las principales motivaciones de esta aplicaci'on.\\
+\medskip
+\noindent
+
+\textbf{Aprendiendo a volar.} \textbf{Avi'on:} Tener un piloto autom'atico entrenado con las estrategias de vuelo de pilotos experimentados es una de las principales motivaciones de esta aplicaci'on.\\
 \textbf{Objetivo:} La idea es que al obtener trazas de pilotos expertos, el simulador pueda realizar un vuelo de forma autom'atica de forma parecida a como lo hace el piloto. Tambi'en se buscaba obtener el modelo de forma expl'icita para poder entender esa estrategia. Ense~nar al piloto autom'atico c'omo despegar, volar a una distancia y altitud determinada, regresar y aterrizar. Usaron C4.5~\cite{Sammut92learningto}\\
 Realizar maniobras en turbulencia~\cite{Isaac03goal-directedlearning} usando una descomposici'on jer'arquica\\
 Uso de aprendizaje por refuerzo y representaci'on relacional, incorporando conocimiento del dominio~\cite{Morales04learningto}.
 
-
 \textbf{C'omo se hizo:} Lo que se hizo fu'e tomar trazas de pilotos expertos, procesarlas con algoritmos de inducci'on de 'arboles. Se obtuvieron modelos que se pod'ian ejecutar en el simulador. \\
 \textbf{Resultados:} Una de los usos que se le di'o fue para entrenar a pilotos. Se observ'o que los mejores pilotos no generan buenas trazas de aprendizaje puesto que cometen pocos errores, siendo asi, el algoritmo de aprendizaje no puede inducir cosas como 'qu'e hacer en caso de'. Se generaron mejores controladores cuando los pilotos tuvieron que corregir sus acciones.\\
 \textbf{Qui'enes:} Claude Sammut~\cite{Sammut92learningto},Andrew Isaac~\cite{Isaac03goal-directedlearning}, Eduardo F. Morales~\cite{Morales04learningto}.
+
+\textbf{Helic'optero.} Desarrollan m'odulos para la automatizaci'on de m'odulos de bajo nivel~\cite{Buskey03c}. Aprendi'o a seguir una trayectoria deseada dando un peque~no n'umero de demostraciones~\cite{heliCoates}. En todos los casos el helic'optero aut'onomo lo hizo mejor que el piloto.
 
 \begin{figure}[h]
 \begin{center}
@@ -219,15 +179,22 @@ Uso de aprendizaje por refuerzo y representaci'on relacional, incorporando conoc
 \end{center}
 \end{figure} 
 
+\begin{figure}[h]
 
-\medskip
-\noindent
+\centering
+\fbox{
+\includegraphics[keepaspectratio,width=5cm]{theimg/helicopteroAm}
+}
+\caption[Helic'optero]{Helic'optero} 
+\label{fig:helicoptero}
 
-\textbf{El p'endulo invertido}. Es uno de los ejemplos cl'asicos de control. Consiste en mantener balanceado Se tiene un p'endulo eEl objetivo es extraer un modelo que al ejecutarlo permita mantener el p'endulo en equilibrio. Extraer un modelo entendible es tambi'en importante.~\cite{Suc99skillmodelling}~\cite{And99modellingof}~\cite{freyre}
+\end{figure}
 
 \paragraph{}
 \noindent
-\textbf{Gr'uas}. Mediante trazas de operadores de gr'ua se aprende un conjunto de ecuaciones usando un sistema llamado Goldhorn
+\textbf{Gr'uas}. Transportar un contenedor de la orilla a una posici'on objetivo en un barco se requieren dos operaciones: posicionar el carro con la cuerda sobre la posici'on de la carga y enlazarla. Hacer esta maniobra requiere tener medidas de seguridad, exactitud. El tiempo de la transportaci'on debe ser el m'inimo. El aspecto m'as importante es controlar el balanceo de la cuerda. Cuando la carga est'a cerca de la posici'on meta, el balanceo ideal deber'ia ser cero.
+
+Se uso simulador~\cite{DBLP:journals/etai/SucB99}
 
 \begin{figure}[h]
 
@@ -242,38 +209,7 @@ Uso de aprendizaje por refuerzo y representaci'on relacional, incorporando conoc
 
 \paragraph{}
 \noindent
-\textbf{Bicicletas}. La idea era aprenderse a equilibrar en una bicicleta y conducir a un punto. Se hizo usando aprendizaje por refuerzo y algo llamado shaping.
-
-\begin{figure}[h]
-
-\centering
-\fbox{
-\includegraphics[keepaspectratio,width=5cm]{theimg/bici}
-}
-\caption[Bicicleta]{Bicicleta} 
-\label{fig:bici}
-
-\end{figure}
-
-\paragraph{}
-\noindent
-\textbf{Dolly el helic'optero}. Aprendi'o estrategias de control de vuelo mediante aprendizaje por refuerzo.
-
-\begin{figure}[h]
-
-\centering
-\fbox{
-\includegraphics[keepaspectratio,width=5cm]{theimg/helicopteroAm}
-}
-\caption[Helic'optero]{Helic'optero} 
-\label{fig:helicoptero}
-
-\end{figure}
-
-
-\paragraph{}
-\noindent
-\textbf{Soccer}. Aprendieron estrategias de juego en un simulador usando WEKA y se las pon'ian a agentes.
+\textbf{Soccer}. Los agentes de Robosoccer son generalmente programados manualmente, es decir, son preprogramados. Se hizo una interfaz para que una persona jugara Robosoccer como un video-juego, se registraron sus entradas y salidas despu'es de varios encuentros. Las posibles acciones son: girar a la izquierda, correr r'apido o lento, patear pelota, patear a gol. La entrada es lo que la persona ve en el campo y la salida lo que la persona hizo en esa situaci'on. Posteriormente una t'ecnica de ML (PART) se usa y se extrae un modelo que es el que se usa para controlar el agente. Aprendieron estrategias de juego en un simulador usando WEKA y se las pon'ian a agentes~\cite{soccerAler}. Los comportamientos que se aprendieron son: buscar la pelota, llevar la pelota hacia la meta, anotar en presencia de oponentes. Aunque funcion'o relativamente bien, es demasiado reactivo y no considera cosas que el humano si. Se pretende incorporar aprendizaje de mayor nivel como pasar la pelota, disparo a gol, empujar la pelota, dribleo y modelar a nivel de entrenador.
 
 \begin{figure}[h]
 
@@ -289,7 +225,8 @@ Uso de aprendizaje por refuerzo y representaci'on relacional, incorporando conoc
 
 \paragraph{}
 \noindent
-\textbf{Rob'otica}. Ejemplo de Claire deste.
+\textbf{Rob'otica}. Ejemplo de Claire deste~\cite{deste:cloning}, %navegaci'on Markovito~\cite{trps:icm09,mkvito:ieee}.
+%navegaci'on Julio~\cite{julioed},
 
 \begin{figure}[h]
 \begin{center}
@@ -307,9 +244,10 @@ Uso de aprendizaje por refuerzo y representaci'on relacional, incorporando conoc
 \end{figure} 
 
 
+\medskip
+\noindent
 
-
-\section{M'as all'a de la clonaci'on b'asica}
+\textbf{M'as all'a de la clonaci'on b'asica}
 El enfoque b'asico de clonaci'on es obtener trazas, aplicar un algoritmo y obtener el modelo. Sin embargo, esto se puede asi de simple solo cuando se tiene por ejemplo, un conjunto de acciones como clases y as'i. 
 
 Pero qu'e pasa si se quiere aprender en otros niveles, entonces las cosas se complican y hay que aplicar otros enfoques, por ejemplo, la descomposici'on, el shaping. Tambi'en todo puede discretizarse pero generalmente las tareas de control tienen atributos num'ericos asi que hay que abordar eso, que si va a ser usando un vector de atributos fijo o si vamos a usar un aprendizaje relacional como con ILP. Y luego est'a el punto de que si vamos a aprender aprendizaje de metas, aprendizaje de jerarqu'ias y conforme se quiere aprender habilidades m'as complejas hay que utilizar enfoques diferentes.
@@ -331,8 +269,7 @@ Ventajas:
 Un aspecto que para algunos es ventaja y para otros desventaja es el hecho de que los ejemplos o trazas deben ser buenos para que el controlador funcione bien. Para m'i punto de vista, es una ventaja que dando ejemplos esto pueda hacerse. Cuando se le ense~na algo ya sea a una mascota o a una persona se le trata de dar los mejores ejemplos posibles, no se le va a ense~ñar mal y luego esperar que lo hagan bien. 
 
 Con respecto a si mismo y a otras t'ecnicas. Beneficio social?
-\section{En rob'otica: el paso a paso}
-\section{Perspectivas futuras}
+\section{Distribuci'on en el mundo}
 
 \bibliographystyle{plain}
 \bibliography{refs}
