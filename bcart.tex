@@ -146,26 +146,37 @@ Conforme las habilidades a aprender se han ido haciendo m'as complicadas han sur
 
 
 \section{Aplicaciones de la clonaci'on}
-Las principales aplicaciones de la clonaci'on son en sistemas din'amicos para los que resulta dif'icil programar de forma manual las habilidades para controlarlos. Lo que se busca es reconstruir la estrategia de control que el operador ejecuta subconscientemente para generar controladores autom'aticos y que sean expl'icitos para que se pueda ver c'omo le hacen.
+\textquestiondown ¿Acaso no ser'ia muy interesante que se pudiera entrenar a los dispositivos que usamos para que se comporten de acuerdo a nuestras necesidades? Por ejemplo, que el despertador, despu'es de un tiempo de usarlo, sea capaz de activar o desactivar su alarma de acuerdo al entrenamiento adquirido. Y adem'as, que el auto sea capaz de conducirse de forma aut'onoma, con un estilo similar al de su due~no. Estas aplicaciones, no est'an lejos de ser una realidad, si no es que algunas ya existen. Los experimentos realizados con clonaci'on han sido diversos, motivados por esa realidad futura. Veamos a continuaci'on algunos ejemplos:
+\medskip
+\noindent
+
+\textbf{El poste y el carro}. Es uno de los ejemplos cl'asicos de control y consiste en un carro que se desliza sobre un riel de longitud fija. Un poste est'a asegurado al carro de modo que s'olo puede balancearse en una dimensi'on. El carro se mueve 'unicamente al aplicarle una fuerza de magnitud fija hacia la izquierda o derecha. La tarea del aprendizaje es construir una estrategia de control que mantenga el poste en equilibrio y sin que el carro golpee los extremos del riel. Fue en este problema en el que se mostr'o por primera vez el aprendizaje autom'atico por imitaci'on con entrenamiento de un humano~\cite{Michie94buildingsymbolic,Suc99skillmodelling}. Se han realizado tambi'en experimentos para tutores inteligentes~\cite{And99modellingof}, y en M'exico, se explor'o el control utilizando un enfoque bayesiano~\cite{freyre}.
+
+%\paragraph{}
+%\noindent
+%\textbf{Operaci'on de gr'uas}. Mover un contenedor desde una posici'on hasta un lugar determinado en un barco es una tarea complicada. Se requiere tener precisi'on para posicionar la cuerda sobre la carga y sujetarla, subirla sin que se caiga. El aspecto m'as importante es controlar el balanceo de la cuerda. Cuando la carga est'a cerca de la posici'on meta, el balanceo ideal deber'ia ser cero.
+
+%Se uso simulador~\cite{DBLP:journals/etai/SucB99}
+
+%\begin{figure}[h]
+
+%\centering
+%\fbox{
+%\includegraphics[keepaspectratio,width=3.5cm]{theimg/crane}
+%}
+%\caption[Gr'ua]{Gr'ua} 
+%\label{fig:grua}
+
+%\end{figure}
 
 \medskip
 \noindent
 
-\textbf{El poste y el carro}. Es uno de los ejemplos cl'asicos de control. Consiste en un carro que se desliza sobre un riel de longitud fija. Un poste est'a aseguradol carro de modo que s'olo puede balancearse en una dimensi'on. Solo una fuerza de magnitud fija puede aplicrse hacia la izquierda o derecha. La tarea del aprendizaje es construir una estrategia de control que mantenga el poste en equilibrio y al carro sin golpear los extremos del riel. El problema se trata de evitar la falla m'as que de alcanzar un valor espec'ifico. Consiste en mantener balanceado Se tiene un p'endulo eEl objetivo es extraer un modelo que al ejecutarlo permita mantener el p'endulo en equilibrio. Extraer un modelo entendible es tambi'en importante.~\cite{Suc99skillmodelling}. En M'exico ~\cite{And99modellingof} orientado a tutores inteligentes y un enfoque bayesiano~\cite{freyre} 
+\textbf{Aprendiendo a volar.} La existencia de simuladores para esta actividad favoreci'o esta aplicaci'on. Existen diversos trabajos sobre este dominio y se han hecho experimentos tanto para aviones como para helic'opteros.\\
+Una de las principales motivaciones de esta aplicaci'on ha sido el tener un piloto autom'atico entrenado con las estrategias de vuelo de pilotos experimentados. El objetivo es que al obtener trazas de pilotos expertos, se aprenda un modelo de control para que el simulador pueda realizar un vuelo de forma autom'atica de forma parecida a como lo hace el piloto.  En uno de los trabajos se entren'o al piloto autom'atico con las siguientes tareas: despegar, volar a una distancia y altitud determinada, regresar y aterrizar~\cite{Sammut92learningto}. Se obtuvieron trazas de pilotos expertos, las cuales se procesaron con algoritmos de inducci'on de 'arboles. Los modelos resultantes se pod'ian ejecutar en el simulador. Sorpresivamente, se observ'o que los mejores pilotos no generaron buenas trazas de aprendizaje puesto que comet'ian pocos errores. Las trazas de los pilotos expertos no registraron tantas situaciones de riesgo como para que los algoritmos de aprendizaje pudieran inducir modelos 'utiles. Se generaron mejores controladores cuando los pilotos tuvieron que corregir sus acciones. Este experimento fue aplicable al entrenamiento de pilotos.
 
-\medskip
-\noindent
-
-\textbf{Aprendiendo a volar.} \textbf{Avi'on:} Tener un piloto autom'atico entrenado con las estrategias de vuelo de pilotos experimentados es una de las principales motivaciones de esta aplicaci'on.\\
-\textbf{Objetivo:} La idea es que al obtener trazas de pilotos expertos, el simulador pueda realizar un vuelo de forma autom'atica de forma parecida a como lo hace el piloto. Tambi'en se buscaba obtener el modelo de forma expl'icita para poder entender esa estrategia. Ense~nar al piloto autom'atico c'omo despegar, volar a una distancia y altitud determinada, regresar y aterrizar. Usaron C4.5~\cite{Sammut92learningto}\\
-Realizar maniobras en turbulencia~\cite{Isaac03goal-directedlearning} usando una descomposici'on jer'arquica\\
-Uso de aprendizaje por refuerzo y representaci'on relacional, incorporando conocimiento del dominio~\cite{Morales04learningto}.
-
-\textbf{C'omo se hizo:} Lo que se hizo fu'e tomar trazas de pilotos expertos, procesarlas con algoritmos de inducci'on de 'arboles. Se obtuvieron modelos que se pod'ian ejecutar en el simulador. \\
-\textbf{Resultados:} Una de los usos que se le di'o fue para entrenar a pilotos. Se observ'o que los mejores pilotos no generan buenas trazas de aprendizaje puesto que cometen pocos errores, siendo asi, el algoritmo de aprendizaje no puede inducir cosas como 'qu'e hacer en caso de'. Se generaron mejores controladores cuando los pilotos tuvieron que corregir sus acciones.\\
-\textbf{Qui'enes:} Claude Sammut~\cite{Sammut92learningto},Andrew Isaac~\cite{Isaac03goal-directedlearning}, Eduardo F. Morales~\cite{Morales04learningto}.
-
-\textbf{Helic'optero.} Desarrollan m'odulos para la automatizaci'on de m'odulos de bajo nivel~\cite{Buskey03c}. Aprendi'o a seguir una trayectoria deseada dando un peque~no n'umero de demostraciones~\cite{heliCoates}. En todos los casos el helic'optero aut'onomo lo hizo mejor que el piloto.
+Conforme la investigaci'on avanza, se van agregando complicaciones a los experimentos, de modo que los modelos que se aprendan sean m'as realistas. As'i, en experimentos posteriores se aprendi'o a realizar maniobras de turbulencia usando una descomposici'on jer'arquica~\cite{Isaac03goal-directedlearning}. En M'exico, se realizaron experimentos combinando la clonaci'on con aprendizaje por refuerzo y una representaci'on relacional~\cite{Morales04learningto}.\\
+En experimentos m'as recientes~\cite{heliCoates}, se utiliz'o un helic'optero miniatura XCell para aprender a seguir una trayectoria deseada proporcionando un peque~no n'umero de demostraciones. En todas las pruebas realizadas, el helic'optero aut'onomo lo hizo mejor que el piloto. %Desarrollan m'odulos para la automatizaci'on de m'odulos de bajo nivel~\cite{Buskey03c}. 
 
 \begin{figure}[h]
 \begin{center}
@@ -193,24 +204,9 @@ Uso de aprendizaje por refuerzo y representaci'on relacional, incorporando conoc
 
 \paragraph{}
 \noindent
-\textbf{Gr'uas}. Transportar un contenedor de la orilla a una posici'on objetivo en un barco se requieren dos operaciones: posicionar el carro con la cuerda sobre la posici'on de la carga y enlazarla. Hacer esta maniobra requiere tener medidas de seguridad, exactitud. El tiempo de la transportaci'on debe ser el m'inimo. El aspecto m'as importante es controlar el balanceo de la cuerda. Cuando la carga est'a cerca de la posici'on meta, el balanceo ideal deber'ia ser cero.
+\textbf{Robosoccer}. Esta aplicaci'on~\cite{soccerAler} surgi'o motivada por RoboCup, una iniciativa cuyo objetivo es fomentar la investigaci'on en inteligencia artificial. RoboCup usa el juego de soccer como dominio de prueba y aunque la idea es desarrollar un equipo de robots humanoides completamente aut'onomos que pueda ganar al equipo humano campe'on del mundo, existen diversas categor'as. Una de ellas es la liga en simulaci'on que usa un software llamado Robosoccer. Los agentes de Robosoccer son generalmente programados manualmente, es decir, son preprogramados. 
 
-Se uso simulador~\cite{DBLP:journals/etai/SucB99}
-
-\begin{figure}[h]
-
-\centering
-\fbox{
-\includegraphics[keepaspectratio,width=3.5cm]{theimg/crane}
-}
-\caption[Gr'ua]{Gr'ua} 
-\label{fig:grua}
-
-\end{figure}
-
-\paragraph{}
-\noindent
-\textbf{Soccer}. Los agentes de Robosoccer son generalmente programados manualmente, es decir, son preprogramados. Se hizo una interfaz para que una persona jugara Robosoccer como un video-juego, se registraron sus entradas y salidas despu'es de varios encuentros. Las posibles acciones son: girar a la izquierda, correr r'apido o lento, patear pelota, patear a gol. La entrada es lo que la persona ve en el campo y la salida lo que la persona hizo en esa situaci'on. Posteriormente una t'ecnica de ML (PART) se usa y se extrae un modelo que es el que se usa para controlar el agente. Aprendieron estrategias de juego en un simulador usando WEKA y se las pon'ian a agentes~\cite{soccerAler}. Los comportamientos que se aprendieron son: buscar la pelota, llevar la pelota hacia la meta, anotar en presencia de oponentes. Aunque funcion'o relativamente bien, es demasiado reactivo y no considera cosas que el humano si. Se pretende incorporar aprendizaje de mayor nivel como pasar la pelota, disparo a gol, empujar la pelota, dribleo y modelar a nivel de entrenador.
+El objetivo de esta aplicaci'on es que los agentes aprendan a jugar de forma similar a como lo hace un humano experto. Para lograrlo, se hizo una interfaz para que una persona jugara Robosoccer como si fuera un video-juego. La persona jug'o varios encuentros durante los cuales se registraron las entradas y las salidas. Las posibles acciones durante los encuentros eran: girar a la izquierda, correr r'apido o lento, patear pelota, patear a gol. La entrada es lo que la persona ve en el campo y la salida es la acci'on que la persona ejecut'o en cada situaci'on que se le present'o. Posteriormente, mediante algoritmos de aprendizaje se extrae un modelo que es el que se usa para controlar el agente. Los comportamientos que se aprendieron fueron: buscar la pelota, llevar la pelota hacia la meta y anotar en presencia de oponentes. Los agentes con el comportamiento clonado fueron capaces de enfrentar oponentes y anotar goles de forma parecida a la persona de la que aprendieron. Sin embargo, consideraron que su juego es demasiado reactivo y no considera cosas que el humano si. Se pretende incorporar aprendizaje de mayor nivel como pasar la pelota, empujar la pelota, dribleo y modelar a nivel de entrenador.
 
 \begin{figure}[h]
 
@@ -261,9 +257,6 @@ Ventajas:
 \item Puede servir para instrucci'on ya que se muestra expl'icitamente lo que se est'a haciendo.
 \end{itemize}
 
-Un aspecto que para algunos es ventaja y para otros desventaja es el hecho de que los ejemplos o trazas deben ser buenos para que el controlador funcione bien. Para m'i punto de vista, es una ventaja que dando ejemplos esto pueda hacerse. Cuando se le ense~na algo ya sea a una mascota o a una persona se le trata de dar los mejores ejemplos posibles, no se le va a ense~ñar mal y luego esperar que lo hagan bien. 
-
-Con respecto a si mismo y a otras t'ecnicas. Beneficio social?
 \section{Distribuci'on en el mundo}
 
 \begin{figure}[h]
